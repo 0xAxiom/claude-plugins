@@ -1,6 +1,6 @@
 ---
 name: sdk-transaction-builder
-description: Build blockchain transactions including transfers, approvals, NFT operations, and DeFi interactions. Use for advanced transaction building beyond simple swaps.
+description: This skill should be used when the user asks to "send tokens", "transfer ETH", "send USDC to", "transfer NFT", "wrap ETH", "unwrap WETH", "bridge tokens", "mint NFT", "buy NFT", "approve token", or needs to build transactions for transfers, approvals, NFT operations, cross-chain bridges, or DeFi interactions beyond simple swaps.
 ---
 
 # SDK Transaction Builder

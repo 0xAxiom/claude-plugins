@@ -1,6 +1,6 @@
 ---
 name: sdk-job-management
-description: Manage async jobs with the Bankr SDK including submission, polling, status checking, and cancellation. Use for advanced job control and monitoring.
+description: This skill should be used when the user asks about "job status", "check if request completed", "cancel request", "why is my request taking so long", "poll for result", "batch requests", "retry failed request", "request timeout", or needs advanced control over SDK async operations, manual job polling, batch processing, or retry logic.
 ---
 
 # SDK Job Management

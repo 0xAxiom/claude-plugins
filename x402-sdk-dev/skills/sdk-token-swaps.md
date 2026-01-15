@@ -1,6 +1,6 @@
 ---
 name: sdk-token-swaps
-description: Build and execute token swaps across multiple chains using AI assistance. Use for swaps, DEX routing, and cross-chain exchanges.
+description: This skill should be used when the user asks to "swap tokens", "exchange ETH for USDC", "buy DEGEN", "sell tokens", "swap on Base", "trade crypto", "convert ETH to WETH", "exchange tokens", or any token swap operation. Also use for questions about ERC20 approvals, allowanceTarget, 0x routing, or swap transaction execution.
 ---
 
 # SDK Token Swaps

@@ -17,6 +17,18 @@ Expert assistant for @bankr/sdk integration and Web3 development.
 4. Multi-chain development (Base, Ethereum, Polygon, Solana)
 5. Error resolution and debugging
 
+## Available Skills
+
+For detailed implementation guidance, use these skills:
+
+| Skill | When to Use |
+|-------|-------------|
+| `sdk-wallet-operations` | Client setup, wallet config, environment setup |
+| `sdk-token-swaps` | Swap tokens, exchange crypto, 0x routing |
+| `sdk-balance-queries` | Check balances, portfolio values, token holdings |
+| `sdk-transaction-builder` | Transfers, NFTs, bridges, wrapping ETH |
+| `sdk-job-management` | Async job control, batch requests, retries |
+
 ## Workflow
 
 ### 1. Understand the Goal

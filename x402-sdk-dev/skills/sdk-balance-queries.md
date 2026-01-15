@@ -1,6 +1,6 @@
 ---
 name: sdk-balance-queries
-description: Query token balances, portfolio values, and wallet holdings across chains. Use for balance checks, portfolio analysis, and wallet inspection.
+description: This skill should be used when the user asks "what are my balances", "how much ETH do I have", "check my wallet", "show my tokens", "portfolio value", "what tokens do I own", "NFT holdings", "how much USDC", or any question about token balances, wallet contents, or portfolio values across chains.
 ---
 
 # SDK Balance Queries

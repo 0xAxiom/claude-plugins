@@ -13,8 +13,9 @@ Claude Code integration for [@bankr/sdk](https://www.npmjs.com/package/@bankr/sd
 ## Quick Start
 
 ```bash
-# 1. Copy plugin
-cp -r packages/claude-plugins-marketplace/x402-sdk-dev .claude/plugins/
+# 1. Install plugin
+claude "/plugins marketplace add BankrBot/claude-plugins"
+claude "/plugins install x402-sdk-dev@bankr-claude-plugins"
 
 # 2. Install SDK
 npm install @bankr/sdk
@@ -23,11 +24,6 @@ npm install @bankr/sdk
 export BANKR_PRIVATE_KEY=0x...  # Required: pays $0.10 USDC per request (needs USDC on Base)
 export BANKR_WALLET_ADDRESS=0x... # Optional: receives swapped tokens
 export BANKR_API_URL=https://api-staging.bankr.bot  # Optional
-```
-
-Enable in `.claude/settings.json`:
-```json
-{ "enabledPlugins": { "x402-sdk-dev@bankr": true } }
 ```
 
 ## Skills

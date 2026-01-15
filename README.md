@@ -19,17 +19,8 @@ Public Claude Code plugins for Web3 development with Bankr's multi-chain DeFi in
 ## Installation
 
 ```bash
-# Copy plugin to your project
-cp -r packages/claude-plugins-marketplace/x402-sdk-dev .claude/plugins/
-```
-
-Enable in `.claude/settings.json`:
-```json
-{
-  "enabledPlugins": {
-    "x402-sdk-dev@bankr": true
-  }
-}
+claude "/plugins marketplace add BankrBot/claude-plugins"
+claude "/plugins install x402-sdk-dev@bankr-claude-plugins"
 ```
 
 ## Requirements

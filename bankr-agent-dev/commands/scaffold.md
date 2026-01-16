@@ -156,7 +156,7 @@ For command-line tools:
 ```json
 {
   "name": "{project-name}",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "{description}",
   "type": "module",
   "main": "dist/index.js",

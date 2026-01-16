@@ -17,18 +17,24 @@ _Maintained by the Bankr team._
 
 [View Plugin →](./bankr-agent/)
 
+### bankr-agent-dev
+
+**Developer Toolkit for Building on the Bankr Agent API**
+
+- Scaffold projects: Generate bots, web services, dashboards, CLI tools
+- API documentation: Endpoints, job patterns, TypeScript interfaces
+- Working examples: Ready-to-use client code with polling and cancellation
+
+[View Plugin →](./bankr-agent-dev/)
+
 ### bankr-x402-sdk-dev
 
 **Integration with @bankr/sdk for Web3 Development**
 
-- Market analysis: prices, charts, TA, trending tokens, social sentiment
-- Portfolio tracking: balances, NFT holdings, positions
-- Token swaps with 0x routing and cross-chain bridges (EVM chains)
-- Leveraged trading via Avantis (commodities, forex, crypto up to 150x)
-- NFT operations: buy, transfer, list, mint
-- x402 micropayments ($0.01 USDC per request)
-
-**Note:** Solana and Polymarket are not supported via SDK (wallet mode limitations).
+- Multi-chain token swaps (Base, Polygon, Ethereum, Solana)
+- Wallet operations and balance queries
+- Transaction building and execution
+- x402 micropayment protocol ($0.10 USDC per request)
 
 [View Plugin →](./x402-sdk-dev/)
 
@@ -37,17 +43,20 @@ _Maintained by the Bankr team._
 First, add the marketplace:
 
 ```bash
-claude plugin marketplace add BankrBot/claude-plugins
+claude plugins marketplace add BankrBot/claude-plugins
 ```
 
 Then install the plugin you want:
 
 ```bash
 # For bankr-agent (Bankr agent)
-claude plugin install bankr-agent@bankr-claude-plugins
+claude plugins install bankr-agent@bankr-claude-plugins
+
+# For bankr-agent-dev (Developer toolkit)
+claude plugins install bankr-agent-dev@bankr-claude-plugins
 
 # For x402-sdk-dev (Web3 development SDK)
-claude plugin install bankr-x402-sdk-dev@bankr-claude-plugins
+claude plugins install bankr-x402-sdk-dev@bankr-claude-plugins
 ```
 
 ## Requirements

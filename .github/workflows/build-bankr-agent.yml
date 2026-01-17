@@ -6,12 +6,17 @@ on:
       - 'bankr-agent/mcp-server/**'
       - '.github/workflows/build-bankr-agent.yml'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2

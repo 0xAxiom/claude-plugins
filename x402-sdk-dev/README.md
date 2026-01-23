@@ -56,6 +56,8 @@ export BANKR_API_URL=https://api.bankr.bot  # Optional
 | `sdk-balance-queries` | Token balances, portfolio values |
 | `sdk-transaction-builder` | Transfers, approvals, NFTs, DeFi |
 | `sdk-job-management` | Async job control and monitoring |
+| `x402-project-templates` | Directory structures for bot, web-service, dashboard, cli projects |
+| `x402-client-patterns` | Reusable client code, executor, and common project files |
 
 ## Agent
 
@@ -65,14 +67,16 @@ export BANKR_API_URL=https://api.bankr.bot  # Optional
 
 | Command | Description |
 |---------|-------------|
-| `/bankr-x402-sdk-dev:init-sdk [path]` | Initialize SDK in your project - installs package, creates client file, sets up .env |
+| `/bankr-x402-sdk-dev:scaffold [type]` | Scaffold a complete project using the Bankr x402 SDK |
 
-**Quick setup:**
+**Project types:** `bot`, `web-service`, `dashboard`, `cli`
+
+**Quick start:**
 ```bash
-/bankr-x402-sdk-dev:init-sdk
+/bankr-x402-sdk-dev:scaffold bot
 ```
 
-This auto-detects your package manager and TypeScript setup, then creates a ready-to-use `bankr-client.ts` file.
+This creates a complete project with `bankr-client.ts`, transaction executor, package.json, tsconfig.json, and environment configuration.
 
 ## Basic Usage
 

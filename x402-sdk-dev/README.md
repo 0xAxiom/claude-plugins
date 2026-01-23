@@ -35,6 +35,8 @@ bunx skills add BankrBot/claude-plugins
 ### 2. Install SDK
 
 ```bash
+bun add @bankr/sdk
+# or
 npm install @bankr/sdk
 ```
 

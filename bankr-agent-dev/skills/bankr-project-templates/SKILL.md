@@ -315,8 +315,8 @@ All templates share common files. Load the `bankr-client-patterns` skill for:
 
 ## Next Steps After Scaffolding
 
-1. **Install dependencies**: `npm install`
+1. **Install dependencies**: `bun install` or `npm install`
 2. **Configure API key**: Copy `.env.example` to `.env` and add `BANKR_API_KEY`
 3. **Customize**: Modify the template for your use case
-4. **Run**: `npm run dev` for development
-5. **Build**: `npm run build` for production
+4. **Run**: `bun dev` or `npm run dev` for development
+5. **Build**: `bun run build` or `npm run build` for production

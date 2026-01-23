@@ -22,6 +22,7 @@ Create a complete TypeScript/Node.js project scaffold for building on the Bankr 
    - Project name (kebab-case, e.g., `my-trading-bot`)
    - Brief description of what it will do
    - Any specific SDK operations it will use (swaps, transfers, queries, NFTs, leverage)
+   - Package manager preference: **bun** (recommended - faster) or **npm**
 
 3. **Create project structure**:
    - Load `x402-project-templates` skill for the directory structure
@@ -32,7 +33,7 @@ Create a complete TypeScript/Node.js project scaffold for building on the Bankr 
 
 4. **Explain next steps**:
    - How to set up the payment wallet (private key with USDC on Base)
-   - How to run the project (`npm install && npm run dev`)
+   - How to run the project (use selected package manager: `bun install && bun dev` or `npm install && npm run dev`)
    - What to customize first based on their use case
 
 ## Skills to Load

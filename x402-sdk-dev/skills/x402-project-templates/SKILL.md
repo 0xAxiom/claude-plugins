@@ -298,9 +298,9 @@ All templates share common files. Load the `x402-client-patterns` skill for:
 
 ## Next Steps After Scaffolding
 
-1. **Install dependencies**: `npm install`
+1. **Install dependencies**: `bun install` or `npm install`
 2. **Configure wallet**: Copy `.env.example` to `.env` and add `BANKR_PRIVATE_KEY`
 3. **Fund wallet**: Add USDC on Base ($1-2 recommended for API costs)
 4. **Customize**: Modify the template for your use case
-5. **Run**: `npm run dev` for development
-6. **Build**: `npm run build` for production
+5. **Run**: `bun dev` or `npm run dev` for development
+6. **Build**: `bun run build` or `npm run build` for production

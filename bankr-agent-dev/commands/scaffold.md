@@ -22,6 +22,7 @@ Create a complete TypeScript/Node.js project scaffold for building on the Bankr 
    - Project name (kebab-case, e.g., `my-trading-bot`)
    - Brief description of what it will do
    - Any specific Bankr operations it will use (trading, prices, polymarket, defi)
+   - Package manager preference: **bun** (recommended - faster) or **npm**
 
 3. **Create project structure**:
    - Load `bankr-project-templates` skill for the directory structure
@@ -32,7 +33,7 @@ Create a complete TypeScript/Node.js project scaffold for building on the Bankr 
 
 4. **Explain next steps**:
    - How to get a Bankr API key (https://bankr.bot/api)
-   - How to run the project (`npm install && npm run dev`)
+   - How to run the project (use selected package manager: `bun install && bun dev` or `npm install && npm run dev`)
    - What to customize first based on their use case
 
 ## Skills to Load

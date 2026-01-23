@@ -16,15 +16,33 @@ Claude Code integration for [@bankr/sdk](https://www.npmjs.com/package/@bankr/sd
 
 ## Quick Start
 
+### 1. Install Plugin
+
+**Claude Code:**
 ```bash
-# 1. Install plugin
 claude plugin marketplace add BankrBot/claude-plugins
 claude plugin install bankr-x402-sdk-dev@bankr-claude-plugins
+```
 
-# 2. Install SDK
+**Other Coding Tools (Cursor, OpenCode, Gemini CLI, Antigravity, etc.):**
+
+Only skills are compatible with other platforms. Agents, commands, hooks, and MCP servers require Claude Code.
+
+```bash
+bunx skills add BankrBot/claude-plugins
+```
+
+### 2. Install SDK
+
+```bash
+bun add @bankr/sdk
+# or
 npm install @bankr/sdk
+```
 
-# 3. Configure environment
+### 3. Configure Environment
+
+```bash
 export BANKR_PRIVATE_KEY=0x...  # Required: pays $0.01 USDC per request (needs USDC on Base)
 export BANKR_WALLET_ADDRESS=0x... # Optional: receives swapped tokens
 export BANKR_API_URL=https://api.bankr.bot  # Optional
@@ -40,6 +58,8 @@ export BANKR_API_URL=https://api.bankr.bot  # Optional
 | `sdk-balance-queries` | Token balances, portfolio values |
 | `sdk-transaction-builder` | Transfers, approvals, NFTs, DeFi |
 | `sdk-job-management` | Async job control and monitoring |
+| `x402-project-templates` | Directory structures for bot, web-service, dashboard, cli projects |
+| `x402-client-patterns` | Reusable client code, executor, and common project files |
 
 ## Agent
 
@@ -49,14 +69,16 @@ export BANKR_API_URL=https://api.bankr.bot  # Optional
 
 | Command | Description |
 |---------|-------------|
-| `/bankr-x402-sdk-dev:init-sdk [path]` | Initialize SDK in your project - installs package, creates client file, sets up .env |
+| `/bankr-x402-sdk-dev:scaffold [type]` | Scaffold a complete project using the Bankr x402 SDK |
 
-**Quick setup:**
+**Project types:** `bot`, `web-service`, `dashboard`, `cli`
+
+**Quick start:**
 ```bash
-/bankr-x402-sdk-dev:init-sdk
+/bankr-x402-sdk-dev:scaffold bot
 ```
 
-This auto-detects your package manager and TypeScript setup, then creates a ready-to-use `bankr-client.ts` file.
+This creates a complete project with `bankr-client.ts`, transaction executor, package.json, tsconfig.json, and environment configuration.
 
 ## Basic Usage
 

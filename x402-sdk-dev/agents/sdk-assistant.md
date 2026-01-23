@@ -51,6 +51,8 @@ Load these skills based on user needs:
 
 **Install:**
 ```bash
+bun add @bankr/sdk
+# or
 npm install @bankr/sdk
 ```
 

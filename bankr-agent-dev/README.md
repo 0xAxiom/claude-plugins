@@ -14,13 +14,23 @@ This plugin helps developers scaffold and build applications that interact with 
 ## Prerequisites
 
 - Bankr API key (get one at https://bankr.bot/api)
-- Node.js 18+ and npm/bun
+- Node.js 20+ and npm/bun
 
 ## Installation
+
+### Claude Code
 
 ```bash
 claude plugin marketplace add BankrBot/claude-plugins
 claude plugin install bankr-agent-dev@bankr-claude-plugins
+```
+
+### Other Coding Tools (Cursor, OpenCode, Gemini CLI, Antigravity, etc.)
+
+Only skills are compatible with other platforms. Agents, commands, hooks, and MCP servers require Claude Code.
+
+```bash
+bunx skills add BankrBot/claude-plugins
 ```
 
 ## Usage

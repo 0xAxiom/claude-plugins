@@ -30,9 +30,19 @@ Integration with the Bankr API for crypto trading, market analysis, and Polymark
    ```
 
 3. Install the plugin in Claude Code:
+
+   **Claude Code:**
    ```bash
    claude plugin marketplace add BankrBot/claude-plugins
    claude plugin install bankr-agent@bankr-claude-plugins
+   ```
+
+   **Other Coding Tools (Cursor, OpenCode, Gemini CLI, Antigravity, etc.):**
+
+   Only skills are compatible with other platforms. Agents, commands, hooks, and MCP servers require Claude Code.
+
+   ```bash
+   bunx skills add BankrBot/claude-plugins
    ```
 
 ## Usage

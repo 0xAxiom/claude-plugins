@@ -44,6 +44,8 @@ _Maintained by the Bankr team._
 
 ## Installation
 
+### Claude Code
+
 First, add the marketplace:
 
 ```bash
@@ -63,10 +65,18 @@ claude plugin install bankr-agent-dev@bankr-claude-plugins
 claude plugin install bankr-x402-sdk-dev@bankr-claude-plugins
 ```
 
+### Other Coding Tools (Cursor, OpenCode, Gemini CLI, Antigravity, etc.)
+
+Only skills are compatible with other platforms. Agents, commands, hooks, and MCP servers require Claude Code.
+
+```bash
+bunx skills add BankrBot/claude-plugins
+```
+
 ## Requirements
 
 - Claude Code CLI
-- Node.js 18+
+- Node.js 20+
 - USDC on Base (for x402 payments)
 
 ## Links

@@ -1,5 +1,5 @@
 ---
-name: Bankr Automation (Developer Guide)
+name: Bankr Dev - Automation
 description: This skill should be used when building a limit order system, implementing DCA strategies programmatically, creating TWAP execution, or building a grid trading bot. Covers TypeScript prompt templates like `automationPrompts.dca()`, automation ID parsing, DcaStrategyBuilder and GridTradingBot classes, and retry patterns. Triggered by "limit order bot code", "DCA automation TypeScript", "TWAP implementation", "grid trading bot".
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: Bankr Token Trading (Developer Guide)
+name: Bankr Dev - Token Trading
 description: This skill should be used when building a trading bot, implementing token swaps programmatically, creating a DCA bot, building an arbitrage system, or automating cross-chain bridges. Covers TypeScript prompt templates like `tradingPrompts.buy()`, swap response parsing, and complete TradingBot class implementation. Triggered by "trading bot code", "swap prompt template", "TypeScript trading types", "programmatic token swaps".
 version: 1.0.0
 ---

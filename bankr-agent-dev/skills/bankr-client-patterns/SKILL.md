@@ -1,5 +1,5 @@
 ---
-name: Bankr Client Patterns
+name: Bankr Dev - Client Patterns
 description: This skill should be used when the user asks to "implement Bankr client", "write bankr-client.ts", "create API client for Bankr", "common files for Bankr project", "package.json for Bankr", "tsconfig for Bankr", "Bankr TypeScript patterns", "Bankr response types", or needs the reusable client code and common project files for Bankr API integrations.
 version: 1.0.0
 ---

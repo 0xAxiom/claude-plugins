@@ -1,5 +1,5 @@
 ---
-name: Bankr NFT Operations (Developer Guide)
+name: Bankr Dev - NFT Operations
 description: This skill should be used when building an NFT sniping bot, implementing floor price monitoring, creating a collection sweeper, or automating NFT purchases via OpenSea. Covers TypeScript prompt templates like `nftPrompts.buyFloor()`, floor tracking with trend detection, and NftBot class with watchlist management. Triggered by "NFT bot code", "floor sweeper TypeScript", "OpenSea automation", "NFT sniping implementation".
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: Bankr NFT Operations
+name: Bankr Agent - NFT Operations
 description: This skill should be used when the user asks to "buy NFT", "purchase NFT", "OpenSea", "NFT collection", "view my NFTs", "NFT holdings", "mint NFT", "NFT listings", or any NFT-related operation. Provides guidance on browsing, purchasing, and managing NFTs.
 version: 1.0.0
 ---

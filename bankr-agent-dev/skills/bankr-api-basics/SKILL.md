@@ -1,5 +1,5 @@
 ---
-name: Bankr API Basics
+name: Bankr Dev - API Basics
 description: Provides Bankr Agent API documentation including endpoints, job patterns, and TypeScript interfaces. Triggered by questions about "Bankr API", "Bankr Agent API", "how does Bankr work", "Bankr job status", "Bankr response format", or "building on Bankr".
 version: 0.1.0
 ---

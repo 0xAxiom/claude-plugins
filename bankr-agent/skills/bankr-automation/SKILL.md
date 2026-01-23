@@ -1,5 +1,5 @@
 ---
-name: Bankr Automation
+name: Bankr Agent - Automation
 description: This skill should be used when the user asks about "limit order", "stop loss", "DCA", "TWAP", "schedule", "automate", "recurring order", "price trigger", "cancel automation", "my automations", or any automated trading operation. Provides guidance on limit orders, scheduled commands, and automated strategies.
 version: 1.0.0
 ---

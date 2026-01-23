@@ -1,5 +1,5 @@
 ---
-name: Bankr Token Deployment (Developer Guide)
+name: Bankr Dev - Token Deployment
 description: This skill should be used when building a token deployment system, implementing Clanker integration, creating fee auto-claiming, or automating token metadata updates. Covers TypeScript prompt templates like `tokenPrompts.deployWithSocials()`, deployment result parsing, batch deployment with rate limiting, and FeeAutoClaimer class. Triggered by "token deployment bot code", "Clanker integration TypeScript", "fee claiming automation", "batch token deployment".
 version: 1.0.0
 ---

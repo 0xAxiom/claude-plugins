@@ -1,5 +1,5 @@
 ---
-name: SDK Token Swaps
+name: Bankr x402 SDK - Token Swaps
 description: This skill should be used when the user asks to "swap tokens", "exchange ETH for USDC", "buy DEGEN", "sell tokens", "swap on Base", "trade crypto", "convert ETH to WETH", "exchange tokens", "token swap code", "0x routing", or any token swap operation. Also use for questions about ERC20 approvals, allowanceTarget, swap transaction execution, or building swap transactions with the Bankr SDK.
 version: 1.0.0
 ---

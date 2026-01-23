@@ -1,5 +1,5 @@
 ---
-name: Bankr Portfolio
+name: Bankr Agent - Portfolio
 description: This skill should be used when the user asks about "my balance", "portfolio", "token holdings", "check balance", "how much do I have", "wallet balance", "what tokens do I own", "show my holdings", or any balance/portfolio query. Provides guidance on checking balances across chains.
 version: 1.0.0
 ---

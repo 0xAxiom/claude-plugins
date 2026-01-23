@@ -1,5 +1,5 @@
 ---
-name: Bankr Portfolio (Developer Guide)
+name: Bankr Dev - Portfolio
 description: This skill should be used when building a portfolio dashboard, implementing balance monitoring across chains, creating allocation tracking, or building a rebalancing bot. Covers TypeScript prompt templates like `portfolioPrompts.chainBalance()`, portfolio parsing utilities, change detection algorithms, and PortfolioTracker class with analytics. Triggered by "portfolio tracker code", "balance monitoring TypeScript", "multi-chain dashboard", "rebalancing automation".
 version: 1.0.0
 ---

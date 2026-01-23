@@ -1,5 +1,5 @@
 ---
-name: Bankr Token Trading
+name: Bankr Agent - Token Trading
 description: This skill should be used when the user asks to "buy crypto", "sell tokens", "swap ETH", "trade on Base", "exchange tokens", "cross-chain swap", "bridge tokens", "convert ETH to WETH", or any token trading operation. Provides guidance on supported chains, amount formats, and swap operations.
 version: 1.0.0
 ---

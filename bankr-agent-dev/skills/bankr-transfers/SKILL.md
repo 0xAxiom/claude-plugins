@@ -1,5 +1,5 @@
 ---
-name: Bankr Transfers (Developer Guide)
+name: Bankr Dev - Transfers
 description: This skill should be used when building a payment bot, implementing batch transfers, creating a tip bot, automating payroll with ENS resolution, or building a distribution system. Covers TypeScript prompt templates like `transferPrompts.toEns()`, recipient validation patterns, and PaymentBot class with batch processing. Triggered by "payment bot code", "transfer prompt template", "ENS resolution TypeScript", "batch transfer implementation".
 version: 1.0.0
 ---

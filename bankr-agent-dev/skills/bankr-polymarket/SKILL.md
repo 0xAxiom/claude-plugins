@@ -1,5 +1,5 @@
 ---
-name: Bankr Polymarket (Developer Guide)
+name: Bankr Dev - Polymarket
 description: This skill should be used when building a prediction market bot, implementing odds monitoring, creating an auto-betting system, or tracking Polymarket positions programmatically. Covers TypeScript prompt templates like `polymarketPrompts.betYes()`, odds parsing, expected value calculations, and PolymarketBot class with alert systems. Triggered by "Polymarket bot code", "betting prompt template", "odds tracking TypeScript", "prediction market automation".
 version: 1.0.0
 ---

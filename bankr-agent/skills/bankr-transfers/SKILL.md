@@ -1,5 +1,5 @@
 ---
-name: Bankr Transfers
+name: Bankr Agent - Transfers
 description: This skill should be used when the user asks to "send tokens", "transfer ETH", "send to ENS", "transfer to wallet", "send to @username", "transfer to Farcaster", "send to Twitter handle", or any asset transfer operation. Provides guidance on recipient resolution and transfer formats.
 version: 1.0.0
 ---

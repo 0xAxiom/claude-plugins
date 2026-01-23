@@ -1,5 +1,5 @@
 ---
-name: Bankr Leverage Trading
+name: Bankr Agent - Leverage Trading
 description: This skill should be used when the user asks about "leverage trading", "long position", "short position", "Avantis", "derivatives", "forex trading", "commodities trading", "open a position", "close position", "stop loss", "take profit", or any leveraged trading operation. Provides guidance on Avantis perpetuals trading.
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: Bankr Job Workflow
+name: Bankr Agent - Job Workflow
 description: This skill should be used when executing Bankr requests, submitting prompts to Bankr API, polling for job status, checking job progress, using Bankr MCP tools, or understanding the submit-poll-complete workflow pattern. Provides the core asynchronous job pattern for all Bankr API operations.
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: Bankr Leverage Trading (Developer Guide)
+name: Bankr Dev - Leverage Trading
 description: This skill should be used when building a leverage trading bot, implementing perpetual position management, creating risk management systems with stop-loss automation, or building an Avantis integration. Covers TypeScript prompt templates like `leveragePrompts.openLongWithRisk()`, liquidation price calculations, position PnL parsing, and LeverageTradingBot class with risk parameters. Triggered by "leverage bot code", "perpetual trading TypeScript", "Avantis integration", "stop loss automation".
 version: 1.0.0
 ---

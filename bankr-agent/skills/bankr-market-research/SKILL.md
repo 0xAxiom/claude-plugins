@@ -1,5 +1,5 @@
 ---
-name: Bankr Market Research
+name: Bankr Agent - Market Research
 description: This skill should be used when the user asks about "token price", "market data", "technical analysis", "sentiment", "trending tokens", "price chart", "market cap", "token research", "what's the price of", "analyze token", or any market research query. Provides guidance on token research, analysis, and market intelligence.
 version: 1.0.0
 ---

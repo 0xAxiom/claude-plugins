@@ -1,5 +1,5 @@
 ---
-name: SDK Transaction Builder
+name: Bankr x402 SDK - Transaction Builder
 description: This skill should be used when the user asks to "send tokens", "transfer ETH", "send USDC to", "transfer NFT", "wrap ETH", "unwrap WETH", "bridge tokens", "mint NFT", "buy NFT", "approve token", "build transaction", "DeFi transaction", or needs to build transactions for transfers, approvals, NFT operations, cross-chain bridges, ETH/WETH conversions, or DeFi interactions beyond simple swaps using the Bankr SDK.
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: SDK Balance Queries
+name: Bankr x402 SDK - Balance Queries
 description: This skill should be used when the user asks "what are my balances", "how much ETH do I have", "check my wallet", "show my tokens", "portfolio value", "what tokens do I own", "NFT holdings", "how much USDC", "get token balances", "wallet contents", or any question about token balances, wallet contents, portfolio values, or NFT holdings across chains using the Bankr SDK.
 version: 1.0.0
 ---

@@ -1,5 +1,5 @@
 ---
-name: Bankr Market Research (Developer Guide)
+name: Bankr Dev - Market Research
 description: This skill should be used when building a price alert system, implementing technical analysis automation, creating sentiment tracking, or building a trending token discovery bot. Covers TypeScript prompt templates like `marketPrompts.technicalAnalysis()`, price/TA/sentiment parsing, trading signal generation, and MarketMonitor class with alert callbacks. Triggered by "price alert bot code", "market research TypeScript", "sentiment tracking automation", "technical analysis implementation".
 version: 1.0.0
 ---

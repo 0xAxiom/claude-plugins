@@ -1,5 +1,5 @@
 ---
-name: Bankr Polymarket
+name: Bankr Agent - Polymarket
 description: This skill should be used when the user asks about "Polymarket", "prediction markets", "betting odds", "place a bet", "check odds", "market predictions", "what are the odds", "bet on election", "sports betting", or any prediction market operation. Provides guidance on searching markets, placing bets, and managing positions.
 version: 1.0.0
 ---

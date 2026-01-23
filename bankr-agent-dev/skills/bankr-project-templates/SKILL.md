@@ -1,5 +1,5 @@
 ---
-name: Bankr Project Templates
+name: Bankr Dev - Project Templates
 description: This skill should be used when the user asks to "scaffold a Bankr project", "create new Bankr bot", "build a Bankr web service", "create Bankr dashboard", "build Bankr CLI tool", "project structure for Bankr", "Bankr project types", or needs guidance on directory structures and templates for different types of Bankr API integrations.
 version: 1.0.0
 ---

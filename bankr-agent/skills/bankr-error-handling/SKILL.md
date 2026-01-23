@@ -1,5 +1,5 @@
 ---
-name: Bankr Error Handling
+name: Bankr Agent - Error Handling
 description: This skill should be used when encountering authentication errors, API key errors, 401 errors, "invalid API key", "BANKR_API_KEY not set", job failures, or any Bankr API errors. Provides setup instructions and troubleshooting guidance for resolving Bankr configuration issues.
 version: 1.0.0
 ---

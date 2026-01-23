@@ -8,9 +8,8 @@ version: 1.0.0
 
 Research tokens and analyze market data.
 
-## Overview
+## Capabilities
 
-Bankr provides comprehensive market intelligence:
 - Token search across chains
 - Price and market data
 - Technical analysis
@@ -18,251 +17,67 @@ Bankr provides comprehensive market intelligence:
 - Price charts
 - Trending tokens
 
-## Operations
-
-### Price Queries
-
-Get current token prices:
-
-```
-"What's the price of ETH?"
-"How much is Bitcoin worth?"
-"Check the SOL price"
-```
-
-### Market Data
-
-Get comprehensive token data:
-
-```
-"Show me ETH market data"
-"What's the market cap of BNKR?"
-"Get volume for Solana"
-```
-
-### Technical Analysis
-
-Analyze price patterns:
-
-```
-"Do technical analysis on ETH"
-"Show RSI for Bitcoin"
-"Analyze BTC price action"
-```
-
-### Social Sentiment
-
-Check community sentiment:
-
-```
-"What's the sentiment on ETH?"
-"Is the community bullish on SOL?"
-"Check social mentions for BNKR"
-```
-
-### Price Charts
-
-Generate price visualizations:
-
-```
-"Show me ETH price chart"
-"Generate BTC chart for last week"
-"Chart SOL price history"
-```
-
-### Trending Tokens
-
-Discover what's popular:
-
-```
-"What tokens are trending?"
-"Show top gainers today"
-"What's hot in crypto?"
-```
-
 ## Prompt Examples
 
-### Price Queries
+**Price queries:**
+- "What's the price of ETH?"
+- "How much is Bitcoin worth?"
 
-```
-"What's the price of Ethereum?"
-"How much is 1 BTC in USD?"
-"Check BNKR price"
-"What's SOL trading at?"
-```
+**Market data:**
+- "Show me ETH market data"
+- "What's the market cap of BNKR?"
 
-### Market Data
+**Technical analysis:**
+- "Do technical analysis on ETH"
+- "Show RSI for Bitcoin"
+- "Is ETH overbought?"
 
-```
-"Show market cap for ETH"
-"What's the 24h volume for Bitcoin?"
-"Get trading data for Solana"
-"How many holders does BNKR have?"
-```
+**Sentiment:**
+- "What's the sentiment on ETH?"
+- "Is the community bullish on SOL?"
 
-### Technical Analysis
+**Charts:**
+- "Show me ETH price chart"
+- "Generate BTC chart for last week"
 
-```
-"Do technical analysis on Bitcoin"
-"What's the RSI for ETH?"
-"Analyze BTC price trends"
-"Is ETH overbought?"
-```
+**Discovery:**
+- "What tokens are trending?"
+- "Show top gainers today"
+- "Compare ETH vs SOL"
 
-### Sentiment
-
-```
-"What's the sentiment on Solana?"
-"Is the market bullish on ETH?"
-"Check Twitter sentiment for BTC"
-"How is the community feeling about BNKR?"
-```
-
-### Charts
-
-```
-"Show ETH price chart"
-"Generate weekly BTC chart"
-"Chart SOL price for last month"
-"Visual of ETH performance"
-```
-
-### Discovery
-
-```
-"What tokens are trending today?"
-"Show top gainers this week"
-"What's hot on Base?"
-"Find trending memecoins"
-```
-
-### Comparison
-
-```
-"Compare ETH vs SOL"
-"Which is better: BTC or ETH?"
-"Show ETH and BTC side by side"
-```
-
-## Data Points
+## Data Available
 
 ### Price Data
-
-| Metric | Description |
-|--------|-------------|
-| Price | Current USD price |
-| 24h Change | Percentage change |
-| 7d Change | Weekly performance |
-| ATH | All-time high |
-| ATL | All-time low |
+- Current USD price
+- 24h / 7d change
+- All-time high/low
 
 ### Market Metrics
-
-| Metric | Description |
-|--------|-------------|
-| Market Cap | Total value |
-| Volume (24h) | Trading volume |
-| Circulating Supply | Tokens in market |
-| Total Supply | All tokens |
-| Holders | Number of wallets |
+- Market cap
+- 24h volume
+- Circulating/total supply
+- Number of holders
 
 ### Technical Indicators
-
-| Indicator | Description |
-|-----------|-------------|
-| RSI | Relative Strength Index |
-| MACD | Moving Average Convergence |
-| MA | Moving Averages (50, 200) |
-| Support/Resistance | Key price levels |
-
-## Response Format
-
-### Price Query
-
-```json
-{
-  "response": "Ethereum (ETH): $3,245.67\n24h: +2.3%\n7d: -1.5%\nMarket Cap: $390.2B"
-}
-```
-
-### Technical Analysis
-
-```json
-{
-  "response": "ETH Technical Analysis:\n- RSI: 58 (Neutral)\n- MACD: Bullish crossover\n- 50 MA: $3,180 (above)\n- 200 MA: $2,950 (above)\n\nOutlook: Moderately bullish"
-}
-```
-
-### Sentiment
-
-```json
-{
-  "response": "ETH Sentiment Analysis:\n- Social mentions: 12.5K (up 15%)\n- Sentiment: 67% Bullish\n- Key topics: ETF, staking, upgrades\n- Community mood: Optimistic"
-}
-```
-
-### Chart
-
-Returns a URL or base64 image in `richData`:
-
-```json
-{
-  "response": "Here's the ETH price chart for the last 7 days:",
-  "richData": [{
-    "type": "chart",
-    "url": "https://..."
-  }]
-}
-```
+- RSI (Relative Strength Index)
+- MACD
+- Moving averages (50, 200)
+- Support/resistance levels
 
 ## Supported Chains
 
-Token research works across:
-- **Base**: Native and ERC20 tokens
-- **Polygon**: Native and ERC20 tokens
-- **Ethereum**: All mainnet tokens
-- **Solana**: SOL and SPL tokens
-- **Unichain**: Emerging tokens
+Token research works across Base, Polygon, Ethereum, Solana, and Unichain.
 
 ## Token Search
 
 Find tokens by name or symbol:
-
-```
-"Search for BNKR token"
-"Find tokens called Bankr"
-"What is the contract for PEPE on Base?"
-```
-
-## Use Cases
-
-### Before Trading
-
-```
-"What's the price of ETH?" → Check current price
-"Analyze ETH technicals" → Evaluate entry point
-"Check ETH sentiment" → Gauge market mood
-```
-
-### Market Research
-
-```
-"What's trending today?" → Find opportunities
-"Compare SOL vs ETH" → Evaluate options
-"Show top Base tokens" → Discover new projects
-```
-
-### Portfolio Analysis
-
-```
-"How is BNKR performing?" → Track holdings
-"Chart my ETH performance" → Visualize gains
-"What's the outlook for SOL?" → Plan strategy
-```
+- "Search for BNKR token"
+- "Find tokens called Bankr"
+- "What is the contract for PEPE on Base?"
 
 ## Limitations
 
-- **Historical data**: Limited to available timeframes
-- **Sentiment**: Based on available social data
-- **New tokens**: May have limited data
-- **Predictions**: Not investment advice
+- Historical data limited to available timeframes
+- Sentiment based on available social data
+- New tokens may have limited data
+- Not investment advice

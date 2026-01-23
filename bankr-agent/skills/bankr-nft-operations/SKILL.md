@@ -6,157 +6,52 @@ version: 1.0.0
 
 # Bankr NFT Operations
 
-Browse, purchase, and manage NFTs across chains.
+Browse, purchase, and manage NFTs across chains via OpenSea integration.
 
-## Overview
-
-Bankr supports NFT operations through OpenSea integration:
-- Browse NFT collections
-- Find best listings
-- Purchase NFTs
-- View NFT holdings
-
-**Supported Chains**: Base, Ethereum, Polygon, and other EVM chains
+**Supported Chains**: Base, Ethereum, Polygon
 
 ## Operations
 
-### Browse NFTs
-
-Search for NFT collections:
-
-```
-"Find NFTs from the Bored Ape collection"
-"Search for CryptoPunks on OpenSea"
-"Show me trending NFT collections"
-```
-
-### View Listings
-
-Find the best deals in a collection:
-
-```
-"What's the floor price for Pudgy Penguins?"
-"Show cheapest NFTs in Azuki collection"
-"Find listings under 0.1 ETH in Doodles"
-```
-
-### Buy NFTs
-
-Purchase an NFT:
-
-```
-"Buy the cheapest Bored Ape"
-"Purchase this NFT: [OpenSea URL]"
-"Buy floor NFT from CryptoPunks"
-```
-
-### View Holdings
-
-Check your NFT portfolio:
-
-```
-"Show my NFTs"
-"What NFTs do I own?"
-"List my NFT holdings on Base"
-```
-
-## Purchase Methods
-
-### By Collection Name
-
-```
-"Buy the floor NFT from Pudgy Penguins"
-"Purchase cheapest NFT in Azuki collection"
-```
-
-### By OpenSea URL
-
-```
-"Buy this NFT: https://opensea.io/assets/ethereum/0x.../1234"
-"Purchase the NFT at [URL]"
-```
-
-### By Specific Criteria
-
-```
-"Buy a Bored Ape under 30 ETH"
-"Purchase the cheapest blue Pudgy Penguin"
-```
+- **Browse** - Search NFT collections
+- **View Listings** - Find best deals and floor prices
+- **Buy** - Purchase NFTs from marketplace listings
+- **View Holdings** - Check your NFT portfolio
+- **Transfer** - Send NFTs to another wallet
+- **Mint** - Mint from supported platforms (Manifold, SeaDrop)
 
 ## Prompt Examples
 
-### Browsing
+**Browse NFTs:**
+- "Find NFTs from the Bored Ape collection"
+- "Show me trending NFT collections"
 
-```
-"Search for NFT collections on Base"
-"Find popular NFT projects"
-"Show me NFTs similar to CryptoPunks"
-"What are trending NFT collections?"
-```
+**View listings:**
+- "What's the floor price for Pudgy Penguins?"
+- "Show cheapest NFTs in Azuki collection"
 
-### Listings
+**Buy NFTs:**
+- "Buy the cheapest Bored Ape"
+- "Purchase this NFT: [OpenSea URL]"
 
-```
-"What's the floor price for Bored Apes?"
-"Show the 5 cheapest NFTs in Azuki"
-"Find NFT listings under 0.5 ETH"
-"What are the best deals in Pudgy Penguins?"
-```
-
-### Buying
-
-```
-"Buy the cheapest NFT from Doodles"
-"Purchase this OpenSea listing: [URL]"
-"Buy a Bored Ape"
-"Get me the floor NFT from CryptoPunks"
-```
-
-### Holdings
-
-```
-"Show my NFT collection"
-"What NFTs do I own on Ethereum?"
-"List my NFT holdings"
-"Show NFTs in my wallet"
-```
-
-## Supported Operations
-
-- **Buy** - Purchase NFTs from marketplace listings
-- **Transfer** - Send NFTs to another wallet
-- **Mint** - Mint from supported platforms (Manifold, SeaDrop)
-- **View** - Check your NFT holdings
+**View holdings:**
+- "Show my NFTs"
+- "What NFTs do I own on Ethereum?"
 
 ## Collection Resolution
 
-Bankr resolves collection names to OpenSea slugs:
+Bankr resolves common names and abbreviations:
 
 | Input | Resolved |
 |-------|----------|
-| "Bored Apes" | boredapeyachtclub |
-| "BAYC" | boredapeyachtclub |
+| "Bored Apes" / "BAYC" | boredapeyachtclub |
 | "Pudgy Penguins" | pudgypenguins |
 | "CryptoPunks" | cryptopunks |
 
-Supports common names, abbreviations, and variations.
-
 ## Chain Considerations
 
-### Ethereum
-- Most valuable collections
-- Higher gas fees
-- Primary OpenSea marketplace
-
-### Base
-- Growing NFT ecosystem
-- Very low gas fees
-- Good for newer collections
-
-### Polygon
-- Low gas costs
-- Some popular collections
-- Gaming NFTs
+- **Ethereum**: Most valuable collections, higher gas
+- **Base**: Growing ecosystem, very low gas
+- **Polygon**: Low gas, gaming NFTs
 
 ## Common Issues
 
@@ -169,8 +64,7 @@ Supports common names, abbreviations, and variations.
 
 ## Safety Tips
 
-- **Verify collection** - Check official links
-- **Check floor price** - Avoid overpaying
-- **Review before buying** - Confirm the NFT
-- **Beware of fakes** - Look for verified collections
-- **Gas considerations** - Factor in transaction costs
+- Verify collection through official links
+- Check floor price to avoid overpaying
+- Look for verified collections
+- Factor in gas costs

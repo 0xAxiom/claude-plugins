@@ -10,18 +10,10 @@ Transfer tokens to addresses, ENS names, or social handles.
 
 ## Supported Transfers
 
-### EVM Chains
-- Native tokens (ETH, MATIC)
-- ERC20 tokens (USDC, BNKR, etc.)
-- Supported on: Base, Polygon, Ethereum, Unichain
-
-### Solana
-- Native SOL
-- SPL tokens
+- **EVM Chains**: Base, Polygon, Ethereum, Unichain (ETH, MATIC, ERC20 tokens)
+- **Solana**: SOL and SPL tokens
 
 ## Recipient Formats
-
-Bankr resolves recipients from multiple formats:
 
 | Format | Example | Description |
 |--------|---------|-------------|
@@ -31,40 +23,9 @@ Bankr resolves recipients from multiple formats:
 | Farcaster | `@dwr.eth` | Farcaster username |
 | Telegram | `@username` | Telegram handle |
 
-### Resolution Priority
-
-When using social handles, Bankr:
-1. Looks up the username on the platform
-2. Finds their linked wallet address
-3. Validates the address before sending
-
-## Transfer Prompts
-
-### To Address
-
-```
-"Send 0.1 ETH to 0x1234567890abcdef..."
-"Transfer 100 USDC to 0xabcd..."
-```
-
-### To ENS Name
-
-```
-"Send 0.5 ETH to vitalik.eth"
-"Transfer USDC to mydomain.eth"
-```
-
-### To Social Handle
-
-```
-"Send $50 of ETH to @elonmusk on Twitter"
-"Transfer 0.1 ETH to @dwr.eth on Farcaster"
-"Send 100 USDC to @username on Telegram"
-```
+Social handles are resolved to linked wallet addresses before sending.
 
 ## Amount Formats
-
-Same as trading - three formats supported:
 
 | Format | Example | Description |
 |--------|---------|-------------|
@@ -72,57 +33,7 @@ Same as trading - three formats supported:
 | Percentage | `50%` | Percentage of balance |
 | Exact | `0.1 ETH` | Specific amount |
 
-### Examples
-
-```
-"Send $100 worth of ETH to vitalik.eth"
-"Transfer 50% of my USDC to @friend"
-"Send exactly 0.5 ETH to 0x..."
-```
-
-## Chain Selection
-
-### Automatic
-
-If not specified, Bankr selects the appropriate chain:
-- Checks where recipient has activity
-- Considers gas costs
-- Prefers Base for low fees
-
-### Manual
-
-Specify chain in the prompt:
-
-```
-"Send ETH on Base to vitalik.eth"
-"Transfer USDC on Polygon to 0x..."
-"Send SOL on Solana to @username"
-```
-
-## Supported Transfer Types
-
-- **Native tokens** - ETH, MATIC, etc.
-- **ERC20 tokens** - USDC, USDT, any token
-- **NFTs** - See NFT Operations skill
-
-## Common Issues
-
-| Issue | Resolution |
-|-------|------------|
-| ENS not found | Verify the ENS name exists |
-| Social handle not found | Check username is correct |
-| No linked wallet | User hasn't linked wallet to social |
-| Insufficient balance | Reduce amount or add funds |
-| Invalid address | Check address format |
-
-## Security Notes
-
-- Always verify recipient before confirming
-- Double-check addresses for transfers
-- Social handle resolution shows the resolved address
-- Large transfers may require additional confirmation
-
-## Example Prompts
+## Prompt Examples
 
 **To addresses:**
 - "Send 0.5 ETH to 0x1234..."
@@ -135,12 +46,26 @@ Specify chain in the prompt:
 **To social handles:**
 - "Send $20 of ETH to @friend on Twitter"
 - "Transfer 0.1 ETH to @user on Farcaster"
-- "Send USDC to @contact on Telegram"
 
 **With chain specified:**
 - "Send ETH on Base to vitalik.eth"
-- "Transfer USDC on Polygon to @friend"
-
-**Percentage amounts:**
 - "Send 10% of my ETH to @friend"
-- "Transfer half my USDC to vitalik.eth"
+
+## Chain Selection
+
+If not specified, Bankr selects automatically based on recipient activity and gas costs. Specify chain in prompt if needed.
+
+## Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| ENS not found | Verify the ENS name exists |
+| Social handle not found | Check username is correct |
+| No linked wallet | User hasn't linked wallet to social |
+| Insufficient balance | Reduce amount or add funds |
+
+## Security Notes
+
+- Always verify recipient before confirming
+- Social handle resolution shows the resolved address
+- Large transfers may require additional confirmation

@@ -89,10 +89,11 @@ curl -s -X GET "https://api.bankr.bot/agent/job/job_xxx" \
 ```
 
 Check the `status` field:
-- `pending` or `processing`: Wait 2 seconds, poll again
+- `pending` or `processing`: Wait 2 seconds, poll again (max 90 attempts / 3 minutes)
 - `completed`: Read `response` and `transactions`, report to user
 - `failed`: Read `error` field, report to user
 - `cancelled`: Inform user job was cancelled
+- **Timeout**: After 90 poll attempts, stop and report timeout with the jobId
 
 ### Step 3: Report Results
 
@@ -104,17 +105,21 @@ When `status` is `completed`:
 
 | Status | Action |
 |--------|--------|
-| `pending` | Keep polling |
+| `pending` | Keep polling (up to 90 attempts) |
 | `processing` | Keep polling, report statusUpdates if present |
 | `completed` | Read response and transactions, report to user |
 | `failed` | Check error field, report to user |
 | `cancelled` | Inform user job was cancelled |
+| Timeout (90 polls) | Stop polling, report timeout with jobId |
 
 ## Timing
 
 - **Poll interval**: 2 seconds
+- **Maximum poll attempts**: 90 (3 minutes total)
 - **Typical completion**: 30 seconds to 2 minutes
 - **Suggest cancellation**: After 3+ minutes for simple queries
+
+**IMPORTANT**: Stop polling after 90 attempts (3 minutes). If the job hasn't completed, report a timeout to the user and provide the jobId so they can check manually or cancel.
 
 ## Error Handling
 
@@ -137,7 +142,7 @@ If you get a 401 response, the API key is invalid or expired. Ask the user to ve
 
 ### Network Errors
 
-If curl fails, retry after a brief delay. The job continues server-side regardless—you can resume polling with the same jobId.
+If curl fails, retry after a brief delay (max 3 consecutive failures). The job continues server-side regardless—you can resume polling with the same jobId. After 3 consecutive curl failures, stop and report the network error to the user with the jobId.
 
 ## Output Guidelines
 

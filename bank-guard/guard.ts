@@ -1,5 +1,5 @@
 /**
- * BankrGuard - Security middleware for Bankr agents
+ * BankGuard - Security middleware for Bankr agents
  * 
  * Protects agents from wallet drains, malicious transactions, and key leaks.
  */
@@ -11,7 +11,7 @@ import { PromptSanitizer, SanitizerConfig, SanitizeResult } from './sanitizer';
 import { SecretIsolator, IsolatorConfig, RedactResult } from './isolator';
 import { AuditLogger, AuditConfig } from './audit';
 
-export interface BankrGuardConfig {
+export interface BankGuardConfig {
   firewall?: FirewallConfig;
   sanitizer?: SanitizerConfig;
   isolator?: IsolatorConfig;
@@ -35,13 +35,13 @@ export interface GuardResult {
   auditId?: string;
 }
 
-export class BankrGuard {
+export class BankGuard {
   public readonly firewall: TransactionFirewall;
   public readonly sanitizer: PromptSanitizer;
   public readonly isolator: SecretIsolator;
   public readonly audit: AuditLogger;
 
-  constructor(config: BankrGuardConfig = {}) {
+  constructor(config: BankGuardConfig = {}) {
     // Convert ETH to wei for firewall config
     const maxDailySpend = config.maxDailySpendEth 
       ? parseEther(config.maxDailySpendEth.toString())
@@ -157,18 +157,18 @@ export class BankrGuard {
   }
 
   // Presets
-  static strict(rpcUrl?: string): BankrGuard {
-    return new BankrGuard({
+  static strict(rpcUrl?: string): BankGuard {
+    return new BankGuard({
       strictMode: true,
       maxDailySpendEth: 0.5,
       maxPerTxSpendEth: 0.05,
       rpcUrl,
-      audit: { storage: 'file', filePath: './bankr-guard-evm-audit.json' }
+      audit: { storage: 'file', filePath: './bank-guard-evm-audit.json' }
     });
   }
 
-  static standard(rpcUrl?: string): BankrGuard {
-    return new BankrGuard({
+  static standard(rpcUrl?: string): BankGuard {
+    return new BankGuard({
       strictMode: false,
       maxDailySpendEth: 1,
       maxPerTxSpendEth: 0.1,
@@ -178,4 +178,4 @@ export class BankrGuard {
   }
 }
 
-export default BankrGuard;
+export default BankGuard;

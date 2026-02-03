@@ -48,7 +48,7 @@ export class AuditLogger {
   constructor(config: AuditConfig) {
     this.config = {
       storage: config.storage,
-      filePath: config.filePath || './bankr-guard-audit.json',
+      filePath: config.filePath || './bank-guard-audit.json',
       includeTimestamps: config.includeTimestamps ?? true,
       maxEntries: config.maxEntries || 10000
     };

@@ -1,5 +1,5 @@
 {
-  "name": "bankr-guard",
+  "name": "bank-guard",
   "version": "1.0.0",
   "description": "Security middleware for Bankr agents",
   "main": "dist/index.js",

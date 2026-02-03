@@ -1,10 +1,10 @@
 ---
-name: Bankr Guard
+name: Bank Guard
 description: Security middleware for Bankr agents. Use when checking transaction safety, sanitizing on-chain data for LLM input, detecting prompt injection attempts, or auditing agent actions. Provides spending limits, contract allowlists, secret redaction, and audit logging.
 version: 1.0.0
 ---
 
-# Bankr Guard
+# Bank Guard
 
 Security middleware that wraps Bankr operations with safety checks.
 
@@ -18,9 +18,9 @@ Security middleware that wraps Bankr operations with safety checks.
 ## Quick Usage
 
 ```typescript
-import { BankrGuard } from 'bankr-guard';
+import { BankGuard } from 'bank-guard';
 
-const guard = BankrGuard.strict();
+const guard = BankGuard.strict();
 
 // Check transaction
 const result = await guard.checkTransaction(tx);
@@ -63,7 +63,7 @@ const clean = await guard.redactOutput(response);
 ```typescript
 // Wrap Bankr trading with security
 async function safeTrade(prompt: string) {
-  const guard = BankrGuard.standard();
+  const guard = BankGuard.standard();
   
   // Sanitize the prompt
   const sanitized = await guard.sanitizeInput(prompt);

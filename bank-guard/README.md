@@ -1,4 +1,4 @@
-# Bankr Guard
+# Bank Guard
 
 Security middleware for Bankr agents. Protect your agent from draining its wallet, signing malicious transactions, or leaking keys.
 
@@ -14,7 +14,7 @@ Security middleware for Bankr agents. Protect your agent from draining its walle
 ```bash
 # Claude Code
 claude plugin marketplace add 0xAxiom/claude-plugins
-claude plugin install bankr-guard@0xaxiom-claude-plugins
+claude plugin install bank-guard@0xaxiom-claude-plugins
 
 # Other tools
 bunx skills add 0xAxiom/claude-plugins
@@ -23,10 +23,10 @@ bunx skills add 0xAxiom/claude-plugins
 ## Quick Start
 
 ```typescript
-import { BankrGuard } from 'bankr-guard';
+import { BankGuard } from 'bank-guard';
 
 // Create a guard with strict settings
-const guard = BankrGuard.strict('https://mainnet.base.org');
+const guard = BankGuard.strict('https://mainnet.base.org');
 
 // Check transaction before signing
 const result = await guard.checkTransaction({
@@ -58,7 +58,7 @@ const output = await guard.redactOutput(agentResponse);
 ## Configuration
 
 ```typescript
-const guard = new BankrGuard({
+const guard = new BankGuard({
   maxDailySpendEth: 1,      // Max 1 ETH per day
   maxPerTxSpendEth: 0.1,    // Max 0.1 ETH per transaction
   allowedContracts: [       // Only interact with these
@@ -69,7 +69,7 @@ const guard = new BankrGuard({
 });
 ```
 
-## Why Bankr Guard?
+## Why Bank Guard?
 
 Bankr gives agents powerful trading capabilities. But power without safety is dangerous:
 
@@ -77,7 +77,7 @@ Bankr gives agents powerful trading capabilities. But power without safety is da
 - ❌ Malicious token metadata → prompt injection
 - ❌ No audit trail → can't debug or prove intent
 
-Bankr Guard adds the missing security layer.
+Bank Guard adds the missing security layer.
 
 ## Links
 

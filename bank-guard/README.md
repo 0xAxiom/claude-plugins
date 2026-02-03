@@ -1,5 +1,7 @@
 # Bank Guard
 
+> ⚠️ **UNDER DEVELOPMENT** — This plugin is not yet ready for production use. APIs may change. Do not rely on it for real security until v1.0 release.
+
 Security middleware for Bankr agents. Protect your agent from draining its wallet, signing malicious transactions, or leaking keys.
 
 ## Features

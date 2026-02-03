@@ -1,10 +1,12 @@
 ---
 name: Bank Guard
 description: Security middleware for Bankr agents. Use when checking transaction safety, sanitizing on-chain data for LLM input, detecting prompt injection attempts, or auditing agent actions. Provides spending limits, contract allowlists, secret redaction, and audit logging.
-version: 1.0.0
+version: 0.1.0-dev
 ---
 
 # Bank Guard
+
+> ⚠️ **UNDER DEVELOPMENT** — Not ready for production use. APIs may change.
 
 Security middleware that wraps Bankr operations with safety checks.
 
